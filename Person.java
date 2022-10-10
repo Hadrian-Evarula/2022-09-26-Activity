@@ -1,26 +1,21 @@
-public class Person<VariableType> {
-    
-    private String myName;
-    private String myVehicle;
-    private VariableType myDetails;
+public class Person {
+    private String name;
+    private int age;
 
-    public void setMyDetails(VariableType myDetails){
-        this.myDetails=myDetails;
-    }
-    public VariableType getMyDetails(){
-        return myDetails;
+
+    Person(String name, int age){
+        this.name=name;
+        this.age=age;
     }
 
-    public void setMyName(String myName){
-        this.myName=myName;
+    public String getName(){
+        return name;
     }
-    public String getMyName(){
-        return myName;
+    public int getAge(){
+        return age;
     }
-    public void setMyVehicle(String myVehicle){
-        this.myVehicle=myVehicle;
-    }
-    public String getMyVehicle(){
-        return myVehicle;
+
+    public String toString(){
+        return " [Name: " + name + " Age: "  + age + "]";
     }
 }
